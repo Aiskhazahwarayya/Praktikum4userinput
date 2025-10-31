@@ -118,6 +118,14 @@ fun FormPendaftaran(modifier: Modifier = Modifier) {
                         Text(item)
                     }
                 }
+                OutlinedTextField(
+                    value = textAlamat,
+                    onValueChange = { textAlamat = it },
+                    label = { Text("Alamat") },
+                    singleLine = true,
+                    modifier = Modifier.fillMaxWidth()
+                )
+
 
 
 
