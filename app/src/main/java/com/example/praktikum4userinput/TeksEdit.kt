@@ -10,6 +10,7 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.ElevatedCard
+import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
@@ -77,10 +78,15 @@ fun FormPendaftaran(modifier: Modifier = Modifier) {
                 modifier = Modifier.padding(20.dp),
                 verticalArrangement = Arrangement.spacedBy(16.dp)
             ){
-
+                OutlinedTextField(
+                    value = textNama,
+                    onValueChange = { textNama = it },
+                    label = { Text("Nama Lengkap") },
+                    singleLine = true,
+                    modifier = Modifier.fillMaxWidth()
+                )
 
             }
-
         }
 
     }
