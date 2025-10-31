@@ -103,6 +103,22 @@ fun FormPendaftaran(modifier: Modifier = Modifier) {
                         Text(item)
                     }
                 }
+                Text("Status Perkawinan", fontWeight = FontWeight.Bold)
+                statusList.forEach { item ->
+                    Row(
+                        Modifier
+                            .fillMaxWidth()
+                            .selectable(
+                                selected = (textStatus == item),
+                                onClick = { textStatus = item }
+                            ),
+                        verticalAlignment = Alignment.CenterVertically
+                    ) {
+                        RadioButton(selected = (textStatus == item), onClick = { textStatus = item })
+                        Text(item)
+                    }
+                }
+
 
 
             }
