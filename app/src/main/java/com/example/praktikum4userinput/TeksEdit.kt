@@ -1,9 +1,12 @@
 package com.example.praktikum4userinput
 
 import androidx.compose.foundation.background
+import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
@@ -41,6 +44,16 @@ fun FormPendaftaran(modifier: Modifier = Modifier) {
             .padding(10.dp),
         horizontalAlignment = Alignment.CenterHorizontally
     ){
+        Box(
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(top = 60.dp, bottom = 24.dp)
+                .background(headerUnguMuda, shape = RoundedCornerShape(8.dp))
+                .padding(vertical = 25.dp),
+            contentAlignment = Alignment.Center
+        ){
+
+        }
 
     }
 
